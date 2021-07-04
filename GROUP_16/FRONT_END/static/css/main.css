@@ -1,0 +1,67 @@
+body { 
+  background: url("imagev2_blurred.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #5c5b5b;
+}
+
+.form input{
+    float: left;
+}
+
+td.high {
+    background: #8dca9b;
+}
+
+.footer {
+    position: fixed;
+    left: 
+    0;
+    bottom: 0;
+    width: 100%;  
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+span .imp{
+    color: black;
+}
+
+span#ref-name {
+    font-weight: bold;
+}
+
+span#ref-mla {
+    font-style: italic;
+}
+
+tr#total {
+    font-weight: bold;
+    border-top: groove;
+}
+
+div.highlight {
+    background-color: #f5faad;
+}
+
+a{
+    color: rgb(0, 255, 255);
+}

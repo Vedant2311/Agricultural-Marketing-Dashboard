@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../static/javascript/search_bar.js"></script>
+
+<div>
+    <h2>Year wise trend for a particular commodity at a given location</h2>
+<!--     <input type="checkbox" name="million" value="m"> Million<br>
+    <input type="checkbox" name="thousand" value="k"> Thousand<br>
+    <input type="checkbox" class="css-checkbox" onClick="checkAllToggle(this,event)"/> Million -->
+    <div class="search_bar">
+        <form action="{{url_for('search_results_year')}}" method="post">
+            <div class="row">
+              <div class="col">
+                <select class="form-control" name="state" id="state">
+                     <option disabled selected value>-- select state --</option>
+                    {% for state in state_data %}
+                        <option value="{{state[0]}}">{{state[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="district" id="district">
+                    <option disabled selected value>-- select district --</option>
+                    {% for district in district_data %}
+                        <option value="{{district[0]}}">{{district[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="commodity" id="commodity"> 
+                    <option disabled selected value>-- select commodity --</option>
+                    {% for commodity in commodity_data %}
+                        <option value="{{commodity[0]}}">{{commodity[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="variety" id="variety">
+                    <option disabled selected value>-- select variety --</option>
+                     <option value="None">All</option>
+                    {% for commodity in commodity_data_variety %}
+                        <option value="{{commodity[0]}}">{{commodity[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                  <input type="submit" value="Submit">
+              </div>
+
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

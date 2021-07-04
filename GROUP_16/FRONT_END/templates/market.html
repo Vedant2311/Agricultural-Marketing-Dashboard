@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block body %}
+<div>
+    <h2>Market Recommendation</h2>
+    <div class="market">
+        <div class="search_bar">
+        <form action="{{url_for('market_result')}}" method="post">
+            <div class="row">
+              <div class="col">
+                <select class="form-control" name="state" id="state">
+                     <option disabled selected value>-- select state --</option>
+                    {% for state in state_data %}
+                        <option value="{{state[0]}}">{{state[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="district" id="district">
+                    <option disabled selected value>-- select district --</option>
+                    {% for district in district_data %}
+                        <option value="{{district[0]}}">{{district[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="commodity" id="commodity">
+                    <option disabled selected value>-- select commodity --</option>
+                    {% for commodity in commodity_data %}
+                        <option value="{{commodity[0]}}">{{commodity[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="variety" id="variety">
+                    <option disabled selected value>-- select variety --</option>
+                    {% for commodity in commodity_data_variety %}
+                        <option value="{{commodity[0]}}">{{commodity[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="month" id="month">
+                    <option disabled selected value>-- select month --</option>
+                    <option value=1>January</option>
+                    <option value=2>February</option>
+                    <option value=3>March</option>
+                    <option value=4>April</option>
+                    <option value=5>May</option>
+                    <option value=6>June</option>
+                    <option value=7>July</option>
+                    <option value=8>August</option>
+                    <option value=9>September</option>
+                    <option value=10>October</option>
+                    <option value=11>November</option>
+                    <option value=12>December</option>
+                </select>
+              </div>
+              <div class="col">
+                  <input type="submit" value="Submit">
+              </div>
+
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+<script>
+
+</script>
+{% endblock %}

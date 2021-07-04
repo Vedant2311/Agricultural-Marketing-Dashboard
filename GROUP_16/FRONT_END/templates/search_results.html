@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block body %}
+<link rel="stylesheet" href="../static/css/background.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script type="text/javascript" src="../static/javascript/search_results.js"></script>
+{% if data|length ==0 %}
+    <h4>No data found for {{commodity}} ({{variety}}) in {{district[0]}},{{state}} :(</h4>
+{% else %}
+    <h4>Price variation for {{commodity}} ({{variety}}) in {{district[0]}},{{state}}</h4>
+    <table style="width:100%"> 
+                <thead>
+                    <th> Year </th>
+                    <th> Max Price</th>
+                    <th> Min Price</th>
+                    <th> Average Model Price</th>
+                </thead>
+                <tbody>
+                    {% for row in data%}
+                    
+                    <tr id="searchResult">
+                        <td>{{ row[0]}}</td>
+                        <td>{{ row[1]}}</td>
+                        <td>{{ row[2]}}</td> 
+                        <td>{{ row[3]}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+    </table>
+
+    <p align="center">
+        <canvas id = "lineChart" width="600" height="400" align="right">
+        </canvas>
+    </p>
+    <script>
+            lineChart( {{ data|tojson|safe}} );
+    </script>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,60 @@
+[{
+    "language": "Asamese",
+    "code": "as"
+},
+{
+    "language": "Bengali",
+    "code": "bn"
+},
+{
+    "language": "English",
+    "code": "en"
+},
+{
+    "language": "Gujarati",
+    "code": "gu"
+},
+{
+    "language": "Hindi",
+    "code": "hi"
+},
+{
+    "language": "Kannada",
+    "code": "kn"
+},
+{
+    "language": "Malyalam",
+    "code": "ml"
+},
+{
+    "language": "Manipuri",
+    "code": "mni"
+},
+{
+    "language": "Marathi",
+    "code": "mr"
+},
+{
+    "language": "Oria",
+    "code": "or"
+},
+{
+    "language": "Punjabi",
+    "code": "pa"
+},
+{
+    "language": "Sanskrit",
+    "code": "sa"
+},
+{
+    "language": "Tamil",
+    "code": "ta"
+},
+{
+    "language": "Telgu",
+    "code": "te"
+},
+{
+    "language": "Urdu",
+    "code": "ur"
+}]

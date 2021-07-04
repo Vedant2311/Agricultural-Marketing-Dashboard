@@ -1,0 +1,12 @@
+body { 
+    background: url("white.jfif") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+  }
+
+  tr:nth-child(even) {
+    background-color: #e4f3de;
+    }

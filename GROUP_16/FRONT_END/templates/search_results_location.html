@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script type="text/javascript" src="../static/javascript/search_results.js"></script>
+<div class="search_bar">
+    <form action="{{url_for('search_results_location')}}" method="post">
+        <div class="row">
+          <div class="col">
+                <select class="form-control" name="state" id="state">
+                     <option disabled selected value>-- select state --</option>
+                    {% for state in state_data %}
+                        <option value="{{state[0]}}">{{state[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+          <div class="col">
+              <input type="submit" value="Submit">
+          </div>
+        </div>
+    </form>
+</div>
+<table style="width:100%"> 
+            <thead>
+                <th> State </th>
+                <th> District</th>
+                <th> Year</th>
+                <th> Max Price</th>
+                <th> Min Price</th>
+                <th> Average Modal Price</th>
+            </thead>
+            <tbody>
+                {% for row in data%}
+                
+                <tr id="searchResult">
+                    <td>{{ row[0]}}</td>
+                    <td>{{ row[1]}}</td>
+                    <td>{{ row[2]}}</td> 
+                    <td>{{ row[3]}}</td>
+                    <td>{{ row[4]}}</td>
+                    <td>{{ row[5]}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+</table>
+
+<!-- <p align="center">
+    <canvas id = "lineChart" width="600" height="400" align="right">
+    </canvas>
+</p>
+<script>
+        lineChart2( {{ data|tojson|safe}} );
+</script> -->
+
+{% endblock %}

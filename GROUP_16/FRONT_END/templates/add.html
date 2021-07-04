@@ -1,0 +1,107 @@
+
+{% extends "base.html" %}
+{% block body %}
+<div>
+    <h3>Add Records</h3>
+
+    <div class="search_bar">
+        <form action="{{url_for('insert_data')}}" method="post">
+            <div class="row">
+              <div class="col">
+                <label for="state">
+                    State
+                </label>
+                <select class="form-control" name="state" id="state_id">
+                     <option disabled selected value>-- select state --</option>
+                    {% for state in state_data %}
+                        <option value="{{state[0]}}">{{state[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <label for="district">
+                    District
+                </label>
+                <select class="form-control" name="district" id="district_id">
+                    <option disabled selected value>-- select district --</option>
+                    {% for district in district_data %}
+                        <option value="{{district[0]}}">{{district[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <label for="market">
+                    Market Name
+                </label>
+                <select class="form-control" name="market" id="market_id">
+                    <option disabled selected value>-- select market --</option>
+                    {% for market in market %}
+                        <option value="{{market[0]}}">{{market[1]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <label for="commodity">
+                    commodity
+                </label>
+                <select class="form-control" name="commodity" id="commodity_id">
+                    <option disabled selected value>-- select commodity --</option>
+                    {% for commodity in commodity_data %}
+                        <option value="{{commodity[0]}}">{{commodity[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="variety">
+                    Variety
+                </label>
+                <select class="form-control" name="variety" id="variety_id">
+                    <option disabled selected value>-- select variety --</option>
+                    {% for commodity in commodity_data_variety %}
+                        <option value="{{commodity[0]}}">{{commodity[0]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <label for="arrival_date">Arrival Date</label>
+                <input class="form-control" name="arrival_date" id="arrival_date" type="date">
+              </div>
+              <div class="col">
+                <label for="offer_price">Price</label>
+                <input type="number" class="form-control" name="price" id="price">
+              </div>
+              <div class="col">
+                <label for="comment">Comment</label>
+                <input type="text" class="form-control" name="comment" id="comment">
+                </select>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                  <input type="submit" value="Submit">
+              </div>
+
+            </div>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block script %}
+
+{% if source != None %}
+<script>
+    var source = $("div.highlight")
+    source[0].scrollIntoView({
+            behavior: 'auto',
+            block: 'center',
+            inline: 'center'
+        });
+</script>
+{% endif %}
+
+{% endblock %}

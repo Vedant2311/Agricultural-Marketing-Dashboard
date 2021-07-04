@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../static/javascript/search_bar.js"></script>
+
+<div>
+    <h2>Year wise trend for a particular commodity at a given location</h2>
+<!--     <input type="checkbox" name="million" value="m"> Million<br>
+    <input type="checkbox" name="thousand" value="k"> Thousand<br>
+    <input type="checkbox" class="css-checkbox" onClick="checkAllToggle(this,event)"/> Million -->
+    <div class="search_bar">
+        <form action="{{url_for('search_results_record')}}" method="post">
+            <div class="row">
+              <div class="col">
+                <select class="form-control" name="state" id="state_id">
+                     <option disabled selected value>-- select state --</option>
+                    {% for state in state_data %}
+                        <option value="{{state[1]}}">{{state[1]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="district" id="district_id">
+                    <option disabled selected value>-- select district --</option>
+                    {% for district in district_data %}
+                        <option value="{{district[0]}}">{{district[1]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="market" id="market_id">
+                    <option disabled selected value>-- select market --</option>
+                    {% for market in market_data %}
+                        <option value="{{market[0]}}">{{market[1]}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                  <input type="submit" value="Submit">
+              </div>
+
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

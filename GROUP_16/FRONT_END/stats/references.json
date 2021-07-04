@@ -1,0 +1,162 @@
+{
+    "jw300":{
+        "type": "paper",
+        "name": "JW300: A wide-coverage parallel corpus for low-resource languages",
+        "MLA":"Agic, Željko, and Ivan Vulic. \"JW300: A wide-coverage parallel corpus for low-resource languages.\" (2020).",
+        "paper_link":"https://www.repository.cam.ac.uk/bitstream/handle/1810/296987/P19-1310.pdf?sequence=3",
+        "link":"https://www.repository.cam.ac.uk/bitstream/handle/1810/296987/P19-1310.pdf?sequence=3"
+    },
+    "gnome":{
+        "type": "source",
+        "name":"GNOME (Opus)",
+        "MLA":"",
+        "paper_link":"",
+        "link":"http://opus.nlpl.eu/GNOME.php",
+        "info":"A parallel corpus of GNOME localization files. Source: https://l10n.gnome.org"
+    },
+    "ubuntu":{
+        "type": "source",
+        "name":"Ubuntu (Opus)",
+        "MLA":"",
+        "paper_link":"",
+        "link":"http://opus.nlpl.eu/Ubuntu.php",
+        "info":"A parallel corpus of Ubuntu localization files. Source: https://translations.launchpad.net"
+    },
+    "kde4":{
+        "type": "source",
+        "name":"KDE4 (Opus)",
+        "MLA":"",
+        "paper_link":"",
+        "link":"http://opus.nlpl.eu/KDE4.php",
+        "info":"A parallel corpus of KDE4 localization files (v.2)."
+    },
+    "pmi-v1":{
+        "type": "paper",
+        "name":"PMIndia – A Collection of Parallel Corpora of Languages of India",
+        "MLA":"Haddow, Barry, and Faheem Kirefu. \"PMIndia--A Collection of Parallel Corpora of Languages of India.\" arXiv preprint arXiv:2001.09907 (2020).",
+        "paper_link":"https://arxiv.org/pdf/2001.09907.pdf",
+        "info":""
+    },
+    "indo-wordnet-v0.2":{
+        "type": "paper",
+        "name":"IndoWordNet",
+        "MLA":"Bhattacharyya, Pushpak. \"IndoWordNet.\" In Proc. of LREC-10. 2010.",
+        "paper_link":"https://www.cse.iitb.ac.in/~pb/papers/lrec2010-indowordnet.pdf"
+    },
+    "indo-wordnet-sans-v0.2":{
+        "type": "source",
+        "name":"IndoWordNet",
+        "MLA":"Bhattacharyya, Pushpak. \"IndoWordNet.\" In Proc. of LREC-10. 2010.",
+        "paper_link":"https://www.cse.iitb.ac.in/~pb/papers/lrec2010-indowordnet.pdf"
+    },
+    "opus100":{
+        "type": "paper",
+        "name":"OPUS -- Parallel Corpora for Everyone",
+        "MLA":"Tiedemann, Jörg. \"OPUS–parallel corpora for everyone.\" Proceedings of the 19th Annual Conference of the European Association for Machine Translation: Projects/Products. 2016.",
+        "paper_link":"https://www.aclweb.org/anthology/2016.eamt-2.8.pdf"
+    },
+    "ted2020":{
+        "type": "source",
+        "name":"Making monolingual sentence embeddings multilingual using knowledge distillation",
+        "MLA":"Reimers, Nils, and Iryna Gurevych. \"Making monolingual sentence embeddings multilingual using knowledge distillation.\" arXiv preprint arXiv:2004.09813 (2020).",
+        "paper_link":"https://arxiv.org/abs/2004.09813"
+    },
+    "subtitles":{
+        "type": "paper",
+        "name":"OpenSubtitles2016: Extracting Large Parallel Corpora from Movie and TV Subtitles",
+        "MLA":"Lison, Pierre, and Jörg Tiedemann. \"Opensubtitles2016: Extracting large parallel corpora from movie and tv subtitles.\" (2016): 923-929.",
+        "paper_link":"https://www.duo.uio.no/handle/10852/50459"
+    },
+    "wikimatrix":{
+        "type": "paper",
+        "name":"Wikimatrix: Mining 135m parallel sentences in 1620 language pairs from wikipedia",
+        "MLA":"Schwenk, Holger, et al. \"Wikimatrix: Mining 135m parallel sentences in 1620 language pairs from wikipedia.\" arXiv preprint arXiv:1907.05791 (2019).",
+        "paper_link":"https://arxiv.org/abs/1907.05791"
+    },
+    "tanzil":{
+        "type": "source",
+        "name":"Tanzil (Opus)",
+        "MLA":"",
+        "paper_link":"",
+        "link":"",
+        "tnc":"Terms of Use \nThe translations provided at this page are for non-commercial purposes only. If used otherwise, you need to obtain necessary permission from the translator or the publisher. \n If you are using more than three of the following translations in a website or application, we require you to put a link back to this page to make sure that subsequent users have access to the latest updates.",
+        "info": "This is a collection of Quran translations compiled by the Tanzil project."
+    },
+    "pib-v1.3":{
+        "type": "paper",
+        "name":"A Multilingual Parallel Corpora Collection Effort for Indian Languages",
+        "MLA":"Siripragada, Shashank, et al. \"A multilingual parallel corpora collection effort for Indian languages.\" arXiv preprint arXiv:2007.07691 (2020).",
+        "paper_link":"https://www.aclweb.org/anthology/2020.lrec-1.462/"
+    },
+    "mkb-v0":{
+        "type": "paper",
+        "name":"A Multilingual Parallel Corpora Collection Effort for Indian Languages",
+        "MLA":"Siripragada, Shashank, et al. \"A multilingual parallel corpora collection effort for Indian languages.\" arXiv preprint arXiv:2007.07691 (2020).",
+        "paper_link":"https://www.aclweb.org/anthology/2020.lrec-1.462/"
+    },
+    "alt-corpus":{
+        "type": "source",
+        "name":"Asian Language Treebank (ALT) Parallel Corpus",
+        "MLA":"",
+        "paper_link":"",
+        "link":"https://www2.nict.go.jp/astrec-att/member/mutiyama/ALT/"
+    },
+    "wiki-turk":{
+        "type": "source",
+        "name":"Constructing Parallel Corpora for Six Indian Languages via Crowdsourcing",
+        "MLA":"Post, Matt, Chris Callison-Burch, and Miles Osborne. \"Constructing parallel corpora for six indian languages via crowdsourcing.\" Proceedings of the Seventh Workshop on Statistical Machine Translation. 2012.",
+        "paper_link":"https://www.aclweb.org/anthology/W12-3152/"
+    },
+    "wikititles-temp":{
+        "type": "source",
+        "name":"WikiTitles Temp",
+        "MLA":"",
+        "paper_link":""
+    },
+    "iitb":{
+        "type": "source",
+        "name":"The IIT Bombay English-Hindi Parallel Corpus",
+        "MLA":"Kunchukuttan, Anoop, Pratik Mehta, and Pushpak Bhattacharyya. \"The iit bombay english-hindi parallel corpus.\" arXiv preprint arXiv:1710.02855 (2017).",
+        "paper_link":"https://www.cfilt.iitb.ac.in/~parallelcorp/iitb_en_hi_parallel/lrec2018_iitbparallel.pdf"
+    },
+    "odi-en-v2.0":{
+        "type": "paper",
+        "name":"OdiEnCorp 2.0: Odia-English Parallel Corpus for Machine Translation",
+        "MLA":"Parida, Shantipriya, et al. \"OdiEnCorp 2.0: Odia-English Parallel Corpus for Machine Translation.\" Proceedings of the WILDRE5–5th Workshop on Indian Language Data: Resources and Evaluation. 2020.",
+        "paper_link":"https://www.aclweb.org/anthology/2020.wildre-1.3/"
+    },
+    "ufal-en-ta":{
+        "type": "paper",
+        "name":"cEnTam: Creation and Validation of a New English-Tamil Bilingual Corpus",
+        "MLA":"Sanjanasri, J. P., et al. \"cEnTam: Creation and Validation of a New English-Tamil Bilingual Corpus.\" Proceedings of the 13th Workshop on Building and Using Comparable Corpora. 2020.",
+        "paper_link":"https://www.aclweb.org/anthology/2020.bucc-1.10/"
+    },
+    "en-ur-charles":{
+        "type": "source",
+        "name":"English-Urdu Religious Parallel Corpus",
+        "MLA":"Jawaid, Bushra and Zeman, Daniel, 2010, \n English-Urdu Religious Parallel Corpus, LINDAT/CLARIAH-CZ digital library at the Institute of Formal and Applied Linguistics (ÚFAL), Faculty of Mathematics and Physics, Charles University, \n http://hdl.handle.net/11234/1-2582.",
+        "paper_link":"",
+        "link":"https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2582"
+    },
+    "sanskrit-bible":{
+        "type": "website",
+        "name": "The Bible in Sanskrit language",
+        "MLA": "",
+        "paper_link": "",
+        "link":"http://www.sanskritbible.in/"
+    },
+    "ramayana-sans-iitk":{
+        "type": "website",
+        "name":"Valmiki Ramayana",
+        "MLA":"",
+        "paper_link":"",
+        "link":"https://www.valmiki.iitk.ac.in/sloka"
+    },
+    "ramcharitmanas-sans":{
+        "type": "website",
+        "name":"Ramcharitmanas",
+        "MLA":"",
+        "paper_link":"",
+        "link": "https://hindi.webdunia.com/religion/religion/hindu/ramcharitmanas/"
+    }
+}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script type="text/javascript" src="../static/javascript/search_results.js"></script>
+<h3> The following are the top-most recommendation(s) to sell your product based on the Net price and distance</h3>
+<table style="width:100%"> 
+            <thead>
+                <th> State </th>
+                <th> District</th>
+                <th> Net Price (/quintal)</th>
+                <th> Distance (km)</th>
+            </thead>
+            <tbody>
+                {% for row in data%}
+                
+                <tr id="searchResult">
+                    <td>{{ row[4]}}</td>
+                    <td>{{ row[3]}}</td>
+                    <td>{{ row[1]}}</td> 
+                    <td>{{ row[2]}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+</table>
+
+<p align="center">
+    <canvas id = "lineChart_distance" width="600" height="400" align="right">
+    </canvas>
+</p>
+<script>
+        lineChart( {{ data|tojson|safe}} );
+</script>
+
+{% endblock %}
